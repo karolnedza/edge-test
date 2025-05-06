@@ -32,7 +32,7 @@ resource "aws_s3_object" "avx-edge-iso-upload" {
 #  ] 
 }
 
-######################################################
+####################################################
 
 
 resource "aviatrix_edge_gateway_selfmanaged" "test" {
