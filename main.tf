@@ -27,9 +27,9 @@ resource "aws_s3_object" "avx-edge-iso-upload" {
   bucket   = aws_s3_bucket.avx-edge-iso.id
   key      = basename(each.value)
   source   = each.value
-#  depends_on = [
-#    aviatrix_edge_gateway_selfmanaged.test
-#  ] 
+  depends_on = [
+    aviatrix_edge_gateway_selfmanaged.test
+  ] 
 }
 
 ####################################################
