@@ -1,6 +1,6 @@
 
 locals {
-  edge_iso = ["${path.cwd}/primary-edge-vm-site-123.iso"]
+  edge_iso = ["${path.cwd}/au-bne-plrs-avx-edge01-BHPB1076.iso"]
 }
 
 
@@ -36,8 +36,8 @@ resource "aws_s3_object" "avx-edge-iso-upload" {
 
 
 resource "aviatrix_edge_gateway_selfmanaged" "test" {
-  gw_name         = "primary-edge-vm"
-  site_id                 = "site-123"
+  gw_name         = "au-bne-plrs-avx-edge01"
+  site_id                 = "BHPB1076"
   ztp_file_type           = "iso"
   ztp_file_download_path = path.cwd
   dns_server_ip           = "8.8.8.8"
