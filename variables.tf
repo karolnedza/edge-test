@@ -2,7 +2,7 @@ variable "ctrl_ip" {
   type        = string
 }
 
-variable "passwd" {
+variable "password" {
   type        = string
 }
 
